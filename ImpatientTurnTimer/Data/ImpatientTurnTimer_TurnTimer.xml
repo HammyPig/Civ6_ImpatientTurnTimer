@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ImpatientTurnTimer_TurnTimer -->
+<!-- Author: James -->
+<!-- DateCreated: 12/25/2022 4:13:53 PM -->
+<GameData>
+	<TurnSegments>
+		<Update>
+			<Set TimeLimit_Base="10" TimeLimit_PerCity="5" TimeLimit_PerUnit="0"/>
+			<Where TurnSegmentType="TURNSEG_SINGLEPHASE"/>
+		</Update>
+	</TurnSegments>
+</GameData>

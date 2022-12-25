@@ -18,12 +18,21 @@
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
     <AssemblyName>ImpatientTurnTimer</AssemblyName>
     <RootNamespace>ImpatientTurnTimer</RootNamespace>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="ImpatientTurnTimerData"><File>Data/ImpatientTurnTimer_TurnTimer.xml</File></UpdateDatabase></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <None Include="ImpatientTurnTimer.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\ImpatientTurnTimer_TurnTimer.xml">
+      <SubType>Content</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
 </Project>
